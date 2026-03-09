@@ -4,6 +4,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import DashboardScreen from "../screens/DashboardScreen";
 import SearchScreen from "../screens/SearchScreen";
 import DishDetailScreen from "../screens/DishDetailScreen";
+import AssistantScreen from "../screens/AssistantScreen";
 import ProfileScreen from "../screens/ProfileScreen";
 
 const Tab = createBottomTabNavigator();
@@ -21,6 +22,7 @@ function HomeTabs() {
     >
       <Tab.Screen name="Dashboard" component={DashboardScreen} options={{ title: "Hot" }} />
       <Tab.Screen name="Search" component={SearchScreen} options={{ title: "Discover" }} />
+      <Tab.Screen name="Assistant" component={AssistantScreen} options={{ title: "Eat" }} />
       <Tab.Screen name="Profile" component={ProfileScreen} options={{ title: "Profile" }} />
     </Tab.Navigator>
   );

@@ -1,0 +1,19 @@
+{
+  "name": "dishradar-functions",
+  "version": "1.0.0",
+  "description": "Cloud Functions for DishRadar",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "tsc",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "deploy": "firebase deploy --only functions"
+  },
+  "dependencies": {
+    "firebase-functions": "^6.3.0",
+    "@anthropic-ai/sdk": "^0.39.0"
+  },
+  "devDependencies": {
+    "typescript": "~5.9.2"
+  },
+  "private": true
+}
