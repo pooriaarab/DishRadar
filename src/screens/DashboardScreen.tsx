@@ -6,7 +6,7 @@ import { useTrendingDishes } from "../hooks/useDishes";
 
 export default function DashboardScreen() {
   const { dishes, loading } = useTrendingDishes();
-  const navigation = useNavigation();
+  const navigation = useNavigation<any>();
 
   if (loading) {
     return (
@@ -26,7 +26,7 @@ export default function DashboardScreen() {
         renderItem={({ item }) => (
           <DishCard
             dish={item}
-            onPress={() => navigation.navigate("DishDetail" as never, { dish: item } as never)}
+            onPress={() => navigation.navigate("DishDetail", { dish: item })}
           />
         )}
         showsVerticalScrollIndicator={false}
