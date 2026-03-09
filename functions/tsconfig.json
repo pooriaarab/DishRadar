@@ -1,14 +1,13 @@
 {
   "compilerOptions": {
     "module": "commonjs",
-    "noImplicitReturns": true,
-    "noUnusedLocals": true,
-    "outDir": "lib",
-    "sourceMap": true,
+    "target": "es2020",
     "strict": true,
-    "target": "es2017",
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "outDir": "lib",
+    "rootDir": "src",
+    "sourceMap": true,
+    "noImplicitReturns": true
   },
-  "compileOnSave": true,
-  "include": ["src"]
+  "include": ["src/**/*"]
 }
